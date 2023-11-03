@@ -1,0 +1,482 @@
+html {
+    background-color: rgb(222, 222, 228);
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    background-color: rgb(222, 222, 228);
+}
+
+div.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgb(222, 222, 228);
+    min-height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+hr {
+    display: block;
+    border-style: inset;
+    color: gray;
+}
+
+main {
+    max-width: 1000px;
+    min-height: 2rem;
+    min-width: 100px;
+    align-self: center;
+}
+
+.heading-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.chapterHeading {
+    min-height: 2rem;
+    min-width: 4rem;
+    width: 100vw;
+    margin: 10px;
+}
+
+em {
+    font-weight: 100;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 900;
+}
+
+.recipeCardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    grid-template-areas: "greenItem greenItem greenItem"
+        "purpleItem redItem blueItem";
+    margin: 10px;
+}
+
+.recipeCard {
+    min-height: 6rem;
+    min-width: 6rem;
+    max-height: 36rem;
+}
+
+.greenBg {
+    background-color: white;
+    grid-area: greenItem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+img.pancake {
+    width: 66%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.purple-top-container {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px;
+}
+
+.rating-icon {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    padding: 10px 10px 7px 3px;
+    width: 5%;
+    height: 5%;
+}
+
+.star-icon {
+    padding: 10px 10px 7px 3px;
+    width: 15%;
+    height: 15%;
+}
+
+div.next-icon-container {
+    background-color: rgb(255, 255, 109);
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.next-icon {
+    width: 50%;
+    height: 35%;
+}
+
+.purpleBg {
+    background-color: white;
+    grid-area: purpleItem;
+}
+
+.purple-top-container {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+img.porridge {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.icon2 {
+    width: 7%;
+    height: 10%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px;
+}
+
+.redBg {
+    background-color: white;
+    grid-area: redItem;
+}
+
+.red-top-container {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+img.lunch {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.icon3 {
+    width: 7%;
+    height: 10%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px;
+}
+
+.blueBg {
+    background-color: rgb(255, 255, 109);
+    grid-area: blueItem;
+}
+
+.blue-top-container {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+img.dinner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.icon4 {
+    width: 7%;
+    height: 10%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.text-container-blue {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.button-container button {
+    background-color: rgb(222, 222, 228);
+    border-color: rgb(24, 22, 22);
+    border-radius: 40px;
+    padding: 25px;
+    margin: 50px;
+    justify-content: center;
+}
+
+.recipeCategories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.recipeCategories {
+    display: flex;
+    justify-content: space-around;
+}
+
+.category {
+    text-align: center;
+}
+
+.category img {
+    width: 150px;
+    /* Adjust the width of the images as needed */
+    height: 150px;
+    /* Adjust the height of the images as needed */
+    border-radius: 50%;
+    /* Makes the images round */
+}
+
+.category figcaption {
+    margin-top: 10px;
+    /* Adjust the margin as needed */
+}
+
+.roundType {
+    min-height: 4rem;
+    min-width: 4rem;
+    border-radius: 50%;
+    text-align: center;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+.quoteContainer {
+    display: grid;
+    grid-template-columns: (1fr, 1fr, 1fr);
+    grid-gap: 1rem;
+    grid-template-areas: ". beigeItem ."
+        "blackItem beigeItem ."
+        "blackItem beigeItem aquaItem"
+        ". beigeItem aquaItem"
+        ". beigeItem aquaItem";
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 10px;
+}
+
+.cardFloat {
+    grid-area: blackItem;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 80%;
+}
+
+.cardBig {
+
+    grid-area: beigeItem;
+}
+
+.chef-container img {
+    width: 100%;
+    /* Adjust the width of the images as needed */
+    height: 100%;
+    /* Adjust the height of the images as needed */
+}
+
+.cardSmall {
+    width: 100%;
+    height: 100%;
+    grid-area: aquaItem;
+
+}
+
+.jumbotron {
+    min-height: 6rem;
+    min-width: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('assets/footer-food.jpg');
+    /* Set the background image for the jumbotron */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    /* Set the height of the jumbotron */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    /* Set the text color */
+    text-align: center;
+}
+
+.jumbotron::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray; /* Adjust the opacity (the last value) to darken the background */
+    z-index: -1;
+}
+
+.jumbotron-content {
+    max-width: 800px; /* Set the maximum width of the content in the jumbotron */
+}
+
+.jumbotron h1 {
+    font-size: 2.5em; /* Adjust the font size as needed */
+    margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+.jumbotron p {
+    font-size: 1.2em; /* Adjust the font size as needed */
+    margin-bottom: 30px; /* Adjust the margin as needed */
+}
+
+.jumbotron-button {
+    padding: 10px 20px; /* Adjust the padding as needed */
+    background-color: yellow;
+    color: black; /* Set the text color of the button */
+    border: none;
+    border-radius: 45px; /* Adjust the border radius as needed */
+    font-size: 10px; 
+    font-weight: 700;
+    cursor: pointer;
+    margin: 10px;
+    padding: 30px;
+}
+
+.bottom-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* For small devices 
+@media (max-width: 389px) {
+    .heading-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chapterHeading {
+        width: 100%;
+    }
+
+    .recipeCardsContainer {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "greenItem"
+            "purpleItem"
+            "redItem"
+            "blueItem";
+    }
+
+    .recipeCard {
+        min-height: 8rem;
+    }
+
+    .quoteContainer {
+        display: block;
+    }
+}
+
+.bottom-container {
+    text-align: center;
+}*/
+
+/* For medium devices 
+@media (min-width: 768px) and (max-width: 1023px) {
+    .heading-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chapterHeading {
+        width: 100%;
+    }
+}*/
+
+/* For large devices 
+@media (min-width: 1024px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recipeCardsContainer {
+        grid-template-areas:
+            "greenItem greenItem greenItem"
+            "purpleItem redItem blueItem";
+    }
+
+    .quoteContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "blackItem beigeItem aquaItem"
+            "blackItem beigeItem aquaItem";
+    }
+}*/
