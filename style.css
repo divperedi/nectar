@@ -21,6 +21,17 @@ header {
     align-items: flex-end;
 }
 
+.headerIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.headerIcons img {
+    padding: 10px;
+}
+
 hr {
     display: block;
     border-style: inset;
@@ -302,48 +313,62 @@ h4 {
 }
 
 .quoteContainer {
-    display: grid;
-    grid-template-columns: (1fr, 1fr, 1fr);
-    grid-gap: 1rem;
-    grid-template-areas: ". beigeItem ."
-        "blackItem beigeItem ."
-        "blackItem beigeItem aquaItem"
-        ". beigeItem aquaItem"
-        ". beigeItem aquaItem";
-    width: 100%;
-    height: 100%;
     position: relative;
-    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px;
+    margin: 40px;
+}
+
+strong {
+    font-weight: 700;
+    font-size: larger;
+}
+
+h5 {
+    font-weight: 300;
+    font-size: small;
 }
 
 .cardFloat {
-    grid-area: blackItem;
-    width: 100%;
-    height: 100%;
     position: absolute;
-    top: 0%;
-    left: 80%;
+    top: 50%;
+    left: 0%;
+    transform: translate(70%, -90%);
+    color: black;
+    padding: 10px 20px;
+    font-size: 20px;
 }
 
-.cardBig {
-
-    grid-area: beigeItem;
-}
-
-.chef-container img {
-    width: 100%;
-    /* Adjust the width of the images as needed */
-    height: 100%;
-    /* Adjust the height of the images as needed */
+img.chef-container {
+    display: block;
+    width: 30%;
+    height: auto;
+    margin-left: 310px;
+   -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%);
+   
 }
 
 .cardSmall {
-    width: 100%;
-    height: 100%;
-    grid-area: aquaItem;
-
+    color: black;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
 }
 
+.cardSmall p {
+    font-size: 12px;
+    text-align: left;
+    color: rgb(85, 85, 85);
+}
+
+.cardSmall h6 {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+}
 .jumbotron {
     min-height: 6rem;
     min-width: 6rem;
@@ -351,7 +376,8 @@ h4 {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-image: url('assets/footer-food.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('assets/footer-food.jpg');
     /* Set the background image for the jumbotron */
     background-size: cover;
     background-position: center;
@@ -370,33 +396,38 @@ h4 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: gray; /* Adjust the opacity (the last value) to darken the background */
-    z-index: -1;
+    background: rgba(0, 0, 0, .5);
 }
 
 .jumbotron-content {
-    max-width: 800px; /* Set the maximum width of the content in the jumbotron */
+    max-width: 800px;
+    /* Set the maximum width of the content in the jumbotron */
 }
 
 .jumbotron h1 {
-    font-size: 2.5em; /* Adjust the font size as needed */
-    margin-bottom: 20px; /* Adjust the margin as needed */
+    font-size: 2.5em;
+    /* Adjust the font size as needed */
+    margin-bottom: 20px;
+    /* Adjust the margin as needed */
 }
 
 .jumbotron p {
-    font-size: 1.2em; /* Adjust the font size as needed */
-    margin-bottom: 30px; /* Adjust the margin as needed */
+    font-size: 1.2em;
+    /* Adjust the font size as needed */
+    margin-bottom: 30px;
+    /* Adjust the margin as needed */
 }
 
 .jumbotron-button {
-    padding: 10px 20px; /* Adjust the padding as needed */
+    padding: 10px 20px;
+    /* Adjust the padding as needed */
     background-color: yellow;
-    color: black; /* Set the text color of the button */
+    color: black;
+    /* Set the text color of the button */
     border: none;
-    border-radius: 45px; /* Adjust the border radius as needed */
-    font-size: 10px; 
+    border-radius: 45px;
+    /* Adjust the border radius as needed */
+    font-size: 10px;
     font-weight: 700;
     cursor: pointer;
     margin: 10px;
